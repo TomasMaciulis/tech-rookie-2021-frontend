@@ -1,0 +1,1 @@
+start app by running `npm install` and `npm start` within the project directory.
