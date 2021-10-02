@@ -1,6 +1,4 @@
 const TodoCard = ({ todo, todos, setTodos }) => {
-  console.log(todos);
-
   const handleDone = () => {
     todos[todo.id] = {
       ...todo,
