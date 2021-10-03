@@ -17,10 +17,9 @@ const TodoList = ({ todos, setTodos }) => {
 
   return (
     <div>
-      {doneTodos.length > 0 && <h3>Done</h3>}
+      {makeList(activeTodos)}
+      {doneTodos.length > 0 && <h3>Completed</h3>}
         {makeList(doneTodos)}
-      {activeTodos.length > 0 && <h3>Todo</h3>}
-        {makeList(activeTodos)}
     </div>
   );
 }
