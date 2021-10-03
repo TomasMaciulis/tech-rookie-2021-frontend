@@ -1,10 +1,10 @@
-import { useState } from 'react';
 import './App.css';
-import TodoForm from './component/TodoForm';
-import TodoList from './component/TodoList';
+import TodoForm from './components/TodoForm';
+import TodoList from './components/TodoList';
+import useStickyState from './hooks/useStickyState';
 
 function App() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useStickyState([]);
 
   return (
     <div>
